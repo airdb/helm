@@ -1,4 +1,3 @@
-# Helm
 ![Build Status](https://github.com/airdb/sailor/workflows/Go/badge.svg)
 
 Helm Package Repo.
