@@ -1,14 +1,6 @@
 ![Build Status](https://github.com/airdb/sailor/workflows/Go/badge.svg)
 
-Helm Package Repo.
-
-## Create or Update Helm Chart Repo
-
-```bash
-  git clone https://github.com/airdb/helm/
-  cd helm
-  helm repo index ./ --url https://www.airdb.com/helm/
-```
+Helm Package Repo. [Heml index.yaml](/helm/index.yaml)
 
 ## Usage
 
@@ -23,6 +15,14 @@ helm install airdb/mychat
 
 ```bash
 helm env
+```
+
+## Create or Update Helm Chart Repo
+
+```bash
+  git clone https://github.com/airdb/helm/
+  cd helm
+  helm repo index ./ --url https://www.airdb.com/helm/
 ```
 
 ## Other Repos
