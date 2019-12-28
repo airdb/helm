@@ -23,6 +23,9 @@ helm env
 git clone https://github.com/airdb/helm/
 cd helm
 helm repo index ./ --url https://www.airdb.com/helm/
+
+Update the index.yaml file based on your chart.
+helm repo index --merge index.yaml --url https://www.airdb.com/helm/ .
 ```
 
 ## Other Repos
