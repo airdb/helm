@@ -25,6 +25,15 @@ spec:
         - name: config
           configMap:
             name: nginx-config
+        - name: test-volume
+          hostPath:
+            path: /data
+            # this field is optional
+            type: Directory
+        - name: uptime
+          hostPath:
+            path: /var/lib/lxcfs/proc/uptime
+            type: File
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
@@ -35,6 +44,9 @@ spec:
             - name: config
               mountPath: /etc/nginx/nginx.conf
               subPath: nginx.conf
+            - mountPath: /proc/uptime
+              name: uptime
+
           ports:
             - name: http
               containerPort: 80
