@@ -3,7 +3,17 @@ entries:
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2019-12-28T22:50:51.61973574+08:00"
+    created: "2019-12-29T00:11:36.180585+08:00"
+    description: A Helm chart for Kubernetes
+    digest: d642d53ccdf2303706d1ec1d766e72195ea76225794da4de8a331c49f728b871
+    name: mychart
+    type: application
+    urls:
+    - https://www.airdb.com/helm/mychart-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2019-12-29T00:11:36.180162+08:00"
     description: A Helm chart for Kubernetes
     digest: c607408623b88e7deef7f02bf52177cb61ca1d7e7c08b6a3bd913bf12ef25859
     name: mychart
@@ -13,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2019-12-28T22:50:51.615754612+08:00"
+    created: "2019-12-29T00:11:36.179754+08:00"
     description: A Helm chart for Kubernetes
     digest: b92954fd983aaa0fb65a0324d22ca6bf7896ccfc895464a0589cc624cf008d5b
     name: mychart
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://www.airdb.com/helm/mychart-0.1.0.tgz
     version: 0.1.0
-generated: "2019-12-28T22:50:51.613576412+08:00"
+generated: "2019-12-29T00:11:36.179101+08:00"

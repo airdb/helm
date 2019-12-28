@@ -24,6 +24,8 @@ git clone https://github.com/airdb/helm/
 cd helm
 helm repo index ./ --url https://www.airdb.com/helm/
 
+helm package mychart
+
 Update the index.yaml file based on your chart.
 helm repo index --merge index.yaml --url https://www.airdb.com/helm/ .
 ```
