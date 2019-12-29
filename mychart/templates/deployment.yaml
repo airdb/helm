@@ -40,6 +40,7 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          workingDir: {{ .Values.workdir }}
           volumeMounts:
             - name: config
               mountPath: /etc/nginx/nginx.conf
@@ -51,6 +52,12 @@ spec:
             - name: http
               containerPort: 80
               protocol: TCP
+          env:
+            - name: AIRDB
+              value: "Hello from the environment"
+            - name: DATABASE
+              value: {{ printf "mysql://%s:%s@%s:%s/%scharset=utf8&parseTime=True&loc=Local" .Values.database.user .Values.database.password .Values.database.host .Values.database.port .Values.database.dbname }}
+              #value: {{ printf "111%s" "mysql://{{ .Values.database.user }}:{{ .Values.database.password}}@{{ .Values.database.host }}:{{ .Values.database.port }}?database={{ .Values.database.dbname }}?charset=utf8&parseTime=True&loc=Local" }}
           livenessProbe:
             httpGet:
               path: /
