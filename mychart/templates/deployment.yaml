@@ -34,6 +34,34 @@ spec:
           hostPath:
             path: /var/lib/lxcfs/proc/uptime
             type: File
+        - name: cpuinfo
+          hostPath:
+            path: /var/lib/lxcfs/proc/cpuinfo
+            type: File
+        - name: diskstats
+          hostPath:
+            path: /var/lib/lxcfs/proc/diskstats
+            type: File
+        - name: meminfo
+          hostPath:
+            path: /var/lib/lxcfs/proc/meminfo
+            type: File
+        - name: stat
+          hostPath:
+            path: /var/lib/lxcfs/proc/stat
+            type: File
+        - name: swaps
+          hostPath:
+            path: /var/lib/lxcfs/proc/swaps
+            type: File
+        - name: loadavg
+          hostPath:
+            path: /var/lib/lxcfs/proc/loadavg
+            type: File
+        - name: cpu_online
+          hostPath:
+            path: /var/lib/lxcfs/proc/cpu_online
+            type: File
       containers:
         - name: {{ .Chart.Name }}
           securityContext:
