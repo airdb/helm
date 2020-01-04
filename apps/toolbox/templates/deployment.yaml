@@ -17,11 +17,6 @@ spec:
       serviceAccountName: {{ include "toolbox.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
-      volumes:
-        - name: uptime
-          hostPath:
-            path: /var/lib/lxcfs/proc/uptime
-            type: File
       containers:
         - name: {{ .Chart.Name }}
           image: airdb/toolbox
