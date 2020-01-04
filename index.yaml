@@ -3,7 +3,7 @@ entries:
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-01-04T19:29:25.586359342+08:00"
+    created: "2020-01-04T21:07:48.764372134+08:00"
     description: A Helm chart for Kubernetes
     digest: cc0cf12004c0f9a658400010f4b89a8e8cd1cd32911a26901a94646cff72bbae
     name: mychart
@@ -13,7 +13,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-01-04T19:29:25.585240999+08:00"
+    created: "2020-01-04T21:07:48.762634071+08:00"
     description: A Helm chart for Kubernetes
     digest: c607408623b88e7deef7f02bf52177cb61ca1d7e7c08b6a3bd913bf12ef25859
     name: mychart
@@ -23,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-01-04T19:29:25.584160153+08:00"
+    created: "2020-01-04T21:07:48.761615886+08:00"
     description: A Helm chart for Kubernetes
     digest: b92954fd983aaa0fb65a0324d22ca6bf7896ccfc895464a0589cc624cf008d5b
     name: mychart
@@ -34,7 +34,7 @@ entries:
   mysql:
   - apiVersion: v1
     appVersion: 5.7.28
-    created: "2020-01-04T19:29:25.587432783+08:00"
+    created: "2020-01-04T21:07:48.77072349+08:00"
     description: Fast, reliable, scalable, and easy to use open-source relational
       database system.
     digest: 1f558b6e1195fcc2d0f2950b546b85f4daaaee760128a244e5f577d747038d39
@@ -56,4 +56,15 @@ entries:
     urls:
     - https://www.airdb.com/helm/pkg/mysql-1.6.2.tgz
     version: 1.6.2
-generated: "2020-01-04T19:29:25.576859387+08:00"
+  toolbox:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-01-04T21:07:48.771373791+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 6008a781050ff724fcfefa8418ffe20aaa0831ce0b65c80d8b1e91beb4ec917e
+    name: toolbox
+    type: application
+    urls:
+    - https://www.airdb.com/helm/pkg/toolbox-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-01-04T21:07:48.759015645+08:00"

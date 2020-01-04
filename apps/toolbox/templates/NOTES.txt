@@ -1,0 +1,3 @@
+Welcome to use airdb toolbox!
+
+kubectl iexec toolbox  bash
