@@ -26,9 +26,6 @@ spec:
         - name: {{ .Chart.Name }}
           image: airdb/toolbox
           imagePullPolicy: IfNotPresent
-          volumeMounts:
-            - mountPath: /proc/uptime
-              name: uptime
           command:
             - sleep
             - "900"
