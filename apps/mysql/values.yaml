@@ -19,7 +19,7 @@ testFramework:
 ## Specify password for root user
 ##
 ## Default: random 10 character string
-# mysqlRootPassword: testing
+mysqlRootPassword: airdb.dev
 
 ## Create a database user
 ##
