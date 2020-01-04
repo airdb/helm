@@ -3,32 +3,32 @@ entries:
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2019-12-29T22:13:01.541829089+08:00"
+    created: "2020-01-04T16:11:05.786396777+08:00"
     description: A Helm chart for Kubernetes
     digest: cc0cf12004c0f9a658400010f4b89a8e8cd1cd32911a26901a94646cff72bbae
     name: mychart
     type: application
     urls:
-    - https://www.airdb.com/helm/mychart-0.1.2.tgz
+    - https://www.airdb.com/helm/pkg/mychart-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2019-12-29T22:13:01.541171205+08:00"
+    created: "2020-01-04T16:11:05.785898813+08:00"
     description: A Helm chart for Kubernetes
     digest: c607408623b88e7deef7f02bf52177cb61ca1d7e7c08b6a3bd913bf12ef25859
     name: mychart
     type: application
     urls:
-    - https://www.airdb.com/helm/mychart-0.1.1.tgz
+    - https://www.airdb.com/helm/pkg/mychart-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2019-12-29T22:13:01.539929594+08:00"
+    created: "2020-01-04T16:11:05.783923316+08:00"
     description: A Helm chart for Kubernetes
     digest: b92954fd983aaa0fb65a0324d22ca6bf7896ccfc895464a0589cc624cf008d5b
     name: mychart
     type: application
     urls:
-    - https://www.airdb.com/helm/mychart-0.1.0.tgz
+    - https://www.airdb.com/helm/pkg/mychart-0.1.0.tgz
     version: 0.1.0
-generated: "2019-12-29T22:13:01.536871507+08:00"
+generated: "2020-01-04T16:11:05.783034481+08:00"
