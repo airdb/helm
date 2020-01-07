@@ -9,8 +9,8 @@ image:
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
-nameOverride: "airdb"
-fullnameOverride: ""
+nameOverride: ""
+fullnameOverride: "airdb-toolbox"
 
 serviceAccount:
   # Specifies whether a service account should be created
