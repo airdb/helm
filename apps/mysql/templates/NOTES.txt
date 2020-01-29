@@ -14,5 +14,9 @@ To connect to your database:
     # Execute the following command to route the connection:
     kubectl port-forward svc/{{ template "mysql.fullname" . }} {{ .Values.service.port }}
 
-    mysql -h 127.0.0.1 -P{{ .Values.service.port }} -u root -p
-    
+    mysql -h 127.0.0.1 -P{{ .Values.service.port }} -u root -p{{ .Values.mysqlRootPassword }}
+
+3. Database for golang gorm
+
+   GDBC="root:{{ .Values.mysqlRootPassword }}@tcp(127.0.0.1:{{ .Values.service.port }})/
+
