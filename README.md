@@ -7,8 +7,8 @@ Helm Package Repo. [Heml index.yaml](/helm/index.yaml)
 ```bash
 helm repo add airdb https://www.airdb.com/helm/
 helm repo update
-helm search repo  helm/mychart
-helm install airdb/mychat
+helm search repo helm/mychart
+helm install chart airdb/mychat
 ```
 
 ## Helm V3 Profile
