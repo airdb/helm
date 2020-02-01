@@ -32,7 +32,8 @@ spec:
             - name: GDBC
               value: {{ .Values.service.gdbc }}
             - name: PORT
-              value: {{ .Values.service.port }}
+              value: 80
+              #value: {{ .Values.service.port }}
           ports:
             - name: http
               containerPort: 80
