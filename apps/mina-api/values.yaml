@@ -34,7 +34,7 @@ service:
   type: NodePort
   #type: ClusterIP
   port: 80
-  gdbc: "xxx"
+  gdbc: "root:passwd@tcp(localhost:3306)/test"
 
 ingress:
   enabled: true
