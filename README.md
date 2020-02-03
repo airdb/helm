@@ -9,6 +9,7 @@ helm repo add airdb https://www.airdb.com/helm/
 helm repo update
 helm search repo helm/mychart
 helm install chart airdb/mychat
+helm install chart airdb/mychat --dry-run --debug
 ```
 
 ## Helm V3 Profile
