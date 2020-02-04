@@ -41,7 +41,7 @@ ingress:
   annotations:
     qcloud_cert_id: aUaPnAAF
     kubernetes.io/ingress.class: qcloud
-    kubernetes.io/ingress.existLbId: lb-iofv3tn1
+    #kubernetes.io/ingress.existLbId: lb-iofv3tn1
 
   hosts:
     - host: mina.baobeihuijia.com
