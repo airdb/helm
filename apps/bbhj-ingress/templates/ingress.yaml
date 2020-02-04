@@ -24,10 +24,10 @@ spec:
       paths:
       - backend:
           serviceName: bbs-api
-          servicePort: 80
+          servicePort: 8000
         path: /
       - backend:
           serviceName: bbs-api
-          servicePort: 80
+          servicePort: 8000
         path: /apis
 {{- end }}
