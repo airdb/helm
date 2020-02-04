@@ -19,18 +19,15 @@ spec:
   - secretName: bbhj-ingress
 
   rules:
-  - host: airdb.dev
-    http:
-      paths:
-      - backend:
-          serviceName: mina-api
-          servicePort: 80
-        path: /
   - host: mina.baobeihuijia.com
     http:
       paths:
       - backend:
-          serviceName: mina-api
+          serviceName: bbs-api
           servicePort: 80
         path: /
+      - backend:
+          serviceName: bbs-api
+          servicePort: 80
+        path: /apis
 {{- end }}
