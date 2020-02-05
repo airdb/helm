@@ -23,11 +23,11 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: bbs-api
-          servicePort: 8000
+          serviceName: mina-api
+          servicePort: 80
         path: /
       - backend:
-          serviceName: bbs-api
-          servicePort: 8000
+          serviceName: mina-api
+          servicePort: 80
         path: /apis
 {{- end }}
