@@ -6,7 +6,8 @@ replicaCount: 1
 
 image:
   repository: airdb/mina-api
-  pullPolicy: IfNotPresent
+  # pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 imagePullSecrets: []
 nameOverride: ""
