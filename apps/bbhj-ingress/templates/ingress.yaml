@@ -10,10 +10,10 @@ metadata:
   name: {{ $fullName }}
   labels:
     {{- include "bbhj-ingress.labels" . | nindent 4 }}
-  {{- with .Values.ingress.annotations }}
   annotations:
-    {{- toYaml . | nindent 4 }}
-  {{- end }}
+    qcloud_cert_id: {{ .Values.service.qcloud_cert_id }}
+    kubernetes.io/ingress.class: {{ .Values.service.class }}
+    kubernetes.io/ingress.existLbId: {{ .Values.service.qcloud_lb }}
 spec:
   tls:
   - secretName: bbhj-ingress

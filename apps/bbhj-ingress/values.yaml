@@ -34,6 +34,9 @@ service:
   type: LoadBalancer
   #type: ClusterIP
   port: 80
+  class: qcloud
+  qcloud_cert_id: aUaPnAAF
+  qcloud_lb: lb-jyscs533
 
 ingress:
   name: bbhj-ingress
@@ -42,12 +45,6 @@ ingress:
     qcloud_cert_id: aUaPnAAF
     kubernetes.io/ingress.class: qcloud
     kubernetes.io/ingress.existLbId: lb-jyscs534
-
-  hosts:
-    - host: mina.baobeihuijia.com
-      path: /
-      serviceName: mina-api
-      servicePort: 80
 
 
   tls: []
