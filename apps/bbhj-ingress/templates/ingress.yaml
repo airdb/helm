@@ -29,5 +29,9 @@ spec:
       - backend:
           serviceName: mina-api
           servicePort: 80
-        path: /apis/mina
+        path: /apis/mina/v1
+      - backend:
+          serviceName: oauth
+          servicePort: 80
+        path: /apis/oauth/v1
 {{- end }}
