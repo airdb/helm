@@ -36,15 +36,15 @@ service:
   port: 80
   class: qcloud
   qcloud_cert_id: aUaPnAAF
-  qcloud_lb: lb-jyscs533
+  qcloud_lb: lb-jyscs534
 
 ingress:
   name: bbhj-ingress
   enabled: true
   annotations:
     qcloud_cert_id: aUaPnAAF
-    kubernetes.io/ingress.class: qcloud
-    kubernetes.io/ingress.existLbId: lb-jyscs534
+    #kubernetes.io/ingress.class: qcloud
+    #kubernetes.io/ingress.existLbId: lb-jyscs534
 
 
   tls: []
