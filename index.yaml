@@ -3,9 +3,9 @@ entries:
   bbhj-ingress:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-04T20:48:53.234115198+08:00"
+    created: "2020-02-17T23:05:47.476581696+08:00"
     description: A Helm chart for Kubernetes
-    digest: 684bb4f3390644c530a9bb2d223f6e1db2588a1255bc912f8dbceb24671c0f80
+    digest: fc5596865958e0acc19c9252301cbfce6482a522838d07b52e78d13349adea48
     name: bbhj-ingress
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   mina-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-04T20:48:53.235504432+08:00"
+    created: "2020-02-17T23:05:47.477864235+08:00"
     description: A Helm chart for Kubernetes
-    digest: d938a90288357c0a3ab590cea76987ac66fd16a57f69e680ad8fc0be6581d3f2
+    digest: ba304c3a319a6a0875bc540142264fbea40eb902f88028e30dadf17f08f422de
     name: mina-api
     type: application
     urls:
@@ -25,7 +25,7 @@ entries:
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-04T20:48:53.250461294+08:00"
+    created: "2020-02-17T23:05:47.483256695+08:00"
     description: A Helm chart for Kubernetes
     digest: cc0cf12004c0f9a658400010f4b89a8e8cd1cd32911a26901a94646cff72bbae
     name: mychart
@@ -35,7 +35,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-04T20:48:53.237992391+08:00"
+    created: "2020-02-17T23:05:47.482105049+08:00"
     description: A Helm chart for Kubernetes
     digest: c607408623b88e7deef7f02bf52177cb61ca1d7e7c08b6a3bd913bf12ef25859
     name: mychart
@@ -45,7 +45,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-04T20:48:53.236786976+08:00"
+    created: "2020-02-17T23:05:47.479213842+08:00"
     description: A Helm chart for Kubernetes
     digest: b92954fd983aaa0fb65a0324d22ca6bf7896ccfc895464a0589cc624cf008d5b
     name: mychart
@@ -56,7 +56,7 @@ entries:
   mysql:
   - apiVersion: v1
     appVersion: 5.7.28
-    created: "2020-02-04T20:48:53.252825198+08:00"
+    created: "2020-02-17T23:05:47.485295489+08:00"
     description: Fast, reliable, scalable, and easy to use open-source relational
       database system.
     digest: 723264e4f22b3adae6345da7affba3def0a4581daad2f63efdf748a2d7ec211c
@@ -78,10 +78,21 @@ entries:
     urls:
     - https://www.airdb.com/helm/pkg/mysql-1.6.2.tgz
     version: 1.6.2
+  oauth:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-02-17T23:05:47.486488794+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 2e3f651613c6964cfebf1e973b27a58bfc9a70b013600bf371d7665544bb9734
+    name: oauth
+    type: application
+    urls:
+    - https://www.airdb.com/helm/pkg/oauth-0.1.0.tgz
+    version: 0.1.0
   toolbox:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-02-04T20:48:53.254048188+08:00"
+    created: "2020-02-17T23:05:47.487481258+08:00"
     description: A Helm chart for Kubernetes
     digest: 03c7abbd856b526df77797fe2903198042c6e74cc3bb5c8b021f761bbd813dc0
     name: toolbox
@@ -89,4 +100,4 @@ entries:
     urls:
     - https://www.airdb.com/helm/pkg/toolbox-0.1.0.tgz
     version: 0.1.0
-generated: "2020-02-04T20:48:53.22908162+08:00"
+generated: "2020-02-17T23:05:47.475083152+08:00"
