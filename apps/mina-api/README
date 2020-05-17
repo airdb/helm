@@ -1,0 +1,5 @@
+# helm install
+helm install mina-api airdb/mina-api --set service.gdbc="root:passwd@tcp(localhost:3306)/test"
+
+# Check
+helm get notes  mina-api
