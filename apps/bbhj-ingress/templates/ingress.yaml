@@ -14,6 +14,7 @@ metadata:
     qcloud_cert_id: {{ .Values.service.qcloud_cert_id }}
     kubernetes.io/ingress.class: {{ .Values.service.class }}
     kubernetes.io/ingress.existLbId: {{ .Values.service.qcloud_lb }}
+    kubernetes.io/ingress.qcloud-loadbalance-id: {{ .Values.service.qcloud_lb }}
 spec:
   tls:
   - secretName: bbhj-ingress
@@ -30,8 +31,4 @@ spec:
           serviceName: mina-api
           servicePort: 80
         path: /apis/mina/v1
-      - backend:
-          serviceName: oauth
-          servicePort: 80
-        path: /apis/oauth/v1
 {{- end }}

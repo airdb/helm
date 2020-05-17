@@ -42,8 +42,8 @@ ingress:
   name: bbhj-ingress
   enabled: true
   annotations:
-    qcloud_cert_id: aUaPnAAF
     #kubernetes.io/ingress.class: qcloud
+    qcloud_cert_id: aUaPnAAF
     #kubernetes.io/ingress.existLbId: lb-jyscs534
 
 

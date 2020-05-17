@@ -28,6 +28,7 @@ helm repo index ./ --url https://www.airdb.com/helm/
 helm package mychart
 
 Update the index.yaml file based on your chart.
+cd helm
 helm repo index --merge index.yaml --url https://www.airdb.com/helm/ .
 ```
 

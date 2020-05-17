@@ -1,5 +1,8 @@
-# helm install
-helm install mina-api airdb/mina-api --set service.gdbc="root:passwd@tcp(localhost:3306)/test"
+DESCRIPTION:
+	mina-api is the backend for baobeihuijia.com.
+	The QQ robot use it.
 
-# Check
-helm get notes  mina-api
+USAGE:
+	helm install mina-api airdb/mina-api --set service.gdbc="root:passwd@tcp(localhost:3306)/test"
+
+	helm get notes  mina-api
