@@ -4,5 +4,6 @@ DESCRIPTION:
 
 USAGE:
 	helm install mina-api airdb/mina-api --set service.gdbc="root:passwd@tcp(localhost:3306)/test"
+	helm install mina-api airdb/mina-api --set service.write_gdbc="root:passwd@tcp(localhost:3306)/test" --set service.gdbc="root:passwd@tcp(localhost:3306)/test"
 
 	helm get notes  mina-api
