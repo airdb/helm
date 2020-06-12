@@ -35,7 +35,9 @@ service:
   type: NodePort
   #type: ClusterIP
   port: 80
-  gdbc: "root:passwd@tcp(localhost:3306)/test"
+  AIRDB_DB_BBHJ_BBS_READ: "root:passwd@tcp(localhost:3306)/test"
+  AIRDB_DB_MINA_API_READ: "root:passwd@tcp(localhost:3306)/test"
+  AIRDB_DB_MINA_API_WRITE: "root:passwd@tcp(localhost:3306)/test"
 
 ingress:
   enabled: false

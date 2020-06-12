@@ -3,7 +3,13 @@ DESCRIPTION:
 	The QQ robot use it.
 
 USAGE:
-	helm install mina-api airdb/mina-api --set service.gdbc="root:passwd@tcp(localhost:3306)/test"
-	helm install mina-api airdb/mina-api --set service.write_gdbc="root:passwd@tcp(localhost:3306)/test" --set service.gdbc="root:passwd@tcp(localhost:3306)/test"
+	helm show readme mina-api
 
-	helm get notes  mina-api
+	helm install mina-api airdb/mina-api
+
+		Values:
+		--set service.AIRDB_DB_BBHJ_BBS_READ="root:passwd@tcp(localhost:3306)/test" 
+		--set service.AIRDB_DB_MINA_API_READ="root:passwd@tcp(localhost:3306)/test"
+		--set service.AIRDB_DB_MINA_API_WRITE="root:passwd@tcp(localhost:3306)/test"
+
+	helm get notes mina-api

@@ -29,8 +29,12 @@ spec:
           image: "airdb/mina-api:latest"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
-            - name: GDBC
-              value: {{ .Values.service.gdbc }}
+            - name: AIRDB_DB_BBHJ_BBS_READ
+              value: {{ .Values.service.AIRDB_DB_BBHJ_BBS_READ }}
+            - name: AIRDB_DB_MINA_API_READ
+              value: {{ .Values.service.AIRDB_DB_MINA_API_READ }}
+            - name: AIRDB_DB_MINA_API_WRITE
+              value: {{ .Values.service.AIRDB_DB_MINA_API_WRITE }}
             - name: PORT
               value: "80"
               #value: {{ .Values.service.port }}
